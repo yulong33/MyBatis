@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>增删改查信息</h1>
+    <table border="1">
+        <tr>
+            <th>id</th><th>名字</th>
+            <th>分类</th><th>厂牌</th><th>描述</th>
+        </tr>
+        <tr th:each="c:${list}">
+            <td th:text="${c.id}"></td>
+            <td th:text="${c.name}"></td>
+            <td th:text="${c.category}"></td>
+            <td th:text="${c.brand}"></td>
+            <td th:text="${c.description}"></td>
+        </tr>
+    </table>
+</body>
+</html>
